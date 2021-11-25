@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <script src="home.js" defer></script>
+  <title>Weather App</title>
+</head>
+
+<body>
+  <div class="container">
+    <header class="header">
+      <div class="image">
+        <img id="city-image" class="header-bg" src="" alt="">
+      </div>
+      <div class="header-main">
+        <h1>My Weather App</h1>
+        <h3 id="cityname">cityname</h3>
+        <div class="temp">
+          <span id="temp">39</span>
+          <span>&deg;c</span>
+        </div>
+        <p id="state">weather state</p>
+      </div>
+    </header>
+    <main>
+      <div class="day-weather-container">
+        <div class="day-weather">
+          <p id="day1-name">day name</p>
+          <span id="day1-temp">59 </span> <span>&deg;c</span>
+          <img id="day1-img" src="" alt="">
+        </div>
+        <div class="day-weather">
+          <p id="day2-name">day name</p>
+          <span id="day2-temp">59 </span> <span>&deg;c</span>
+          <img id="day2-img" src="" alt="">
+        </div>
+        <div class="day-weather">
+          <p id="day3-name">day name</p>
+          <span id="day3-temp">59 </span> <span>&deg;c</span>
+          <img id="day3-img" src="" alt="">
+        </div>
+        <div class="day-weather">
+          <p id="day4-name">day name</p>
+          <span id="day4-temp">59 </span> <span>&deg;c</span>
+          <img id="day4-img" src="" alt="">
+        </div>
+        <div class="day-weather">
+          <p id="day5-name">day name</p>
+          <span id="day5-temp">59 </span> <span>&deg;c</span>
+          <img id="day5-img" src="" alt="">
+        </div>
+      </div>
+      <form id="form">
+        <input type="text" name="search" autocomplete="off" id="search" class="search"
+          placeholder="Search City Weather.">
+      </form>
+    </main>
+  </div>
+</body>
+
+</html>

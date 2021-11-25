@@ -1,0 +1,178 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&display=swap");
+
+* {
+  box-sizing: border-box;
+  font-family: "poppins", sans-serif;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ced1d6;
+  min-height: 100vh;
+}
+
+.container {
+  box-shadow: 0 0 150px 10px rgba(0, 0, 0, 0.4);
+  width: 400px;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.header {
+  position: relative;
+  line-height: 1;
+  text-align: center;
+  color: #eee;
+}
+
+.header .image {
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+}
+
+.image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -2;
+}
+
+.animation {
+  animation: animation 1s ease;
+}
+
+.image::after {
+  content: "";
+  position: absolute;
+  background: #333;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  opacity: 0.4;
+  left: 0;
+  top: 0;
+}
+
+.header-main {
+  padding: 1.5rem 0 2rem 0;
+  line-height: 1;
+}
+
+.header-main h1 {
+  padding: 1rem 0 2rem 0;
+  font-weight: 500;
+}
+
+.header-main h3 {
+  margin: 1rem 0 3rem 0;
+  font-size: 1.6rem;
+  letter-spacing: 1px;
+  font-weight: lighter;
+}
+
+.temp {
+  position: relative;
+}
+
+.temp span:nth-child(1) {
+  font-size: 3rem;
+}
+
+.temp span:nth-of-type(2) {
+  font-size: 1rem;
+  position: absolute;
+}
+
+.header-main p {
+  font-weight: lighter;
+  margin-top: 0.5rem;
+}
+
+.day-weather-container {
+  width: 100%;
+  display: flex;
+  box-shadow: outset 0 0 10px 3px rgba(0, 0, 0, 0.3);
+  flex-direction: column;
+  background-color: white;
+  padding: 1rem 0;
+  /* line-height: 1; */
+  align-items: center;
+  justify-content: center;
+}
+
+.day-weather {
+  display: flex;
+  padding: 0.8rem 0;
+  width: 60%;
+  justify-content: flex-end;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  align-items: center;
+  line-height: 1;
+  position: relative;
+  color: #455555;
+}
+
+.day-weather p {
+  margin-right: auto;
+  font-size: 1rem;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+}
+
+.day-weather span {
+  font-size: 1.2rem;
+  font-weight: lighter;
+  color: #111;
+}
+
+.day-weather span:nth-of-type(2) {
+  position: absolute;
+  font-size: 0.7rem;
+  top: 0;
+  right: 0;
+  transform: translate(-38px, 10px);
+}
+
+.day-weather img {
+  height: 30px;
+  margin-left: 1rem;
+  opacity: 0.8;
+  width: 30px;
+}
+
+#form {
+  width: 100%;
+}
+
+#form input {
+  width: 100%;
+  background-color: #ddd;
+  padding: 1rem 2rem;
+  font-size: 1.4rem;
+  border: none;
+  font-family: inherit;
+  text-transform: capitalize;
+}
+
+#form input:focus {
+  outline: none;
+}
+
+#form input::placeholder {
+  text-align: center;
+  color: #aaa;
+}
+
+@keyframes animation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
